@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+/* You can add global styles to this file, and also import other style files */
+.containers {
+  margin: 0 auto;
+  width: 95%;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+}
+
+/*# sourceMappingURL=styles.css.map */

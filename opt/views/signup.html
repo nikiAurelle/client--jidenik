@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <div class="centered-content">
+        <h1>Inscription</h1>
+        <div class="centered-form">
+            <form action="/createAccount" method="POST"> 
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur :</label>
+                    <input type="text" id="username" name="username" value = "{{ form.username }}" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" value = "{{ form.email }}" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password" value="{{ form.password }}"   required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirmation du mot de passe :</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword"  value="{{ form.confirmPassword }}" required>
+                </div>
+                <button class="largeButton" type="submit">S'inscrire</button>
+            </form>
+        </div>
+    </div>
+{% endblock main %}

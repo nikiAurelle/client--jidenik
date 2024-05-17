@@ -1,0 +1,93 @@
+header {
+  background-color: #e8e8e8;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.div1 {
+  width: 10%;
+}
+
+.div3 {
+  width: 25%;
+}
+
+.bar-search {
+  flex: 1;
+}
+
+.bar-search input {
+  border-right: 0;
+  height: 40px;
+}
+
+.bar-search .btn-search {
+  background-color: orange;
+  color: white;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav li a {
+  display: flex;
+  align-items: center;
+}
+
+.div-caroussel img {
+  height: 500px;
+}
+
+.div-promos div {
+  height: 400px;
+  width: 49%;
+  box-shadow: 3px 3px 3px gray;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.error {
+  background-color: salmon;
+  color: black;
+}
+
+.success {
+  background-color: lightgreen;
+  color: black;
+}
+
+.msgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+header {
+  background-color: #1d0436;
+}
+
+header a {
+  color: white;
+}
+
+.logo-span {
+  color: orange;
+  font-size: 50px;
+}
+
+.btn-deco {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+/*# sourceMappingURL=header.component.css.map */

@@ -1,0 +1,53 @@
+.star-icon {
+  cursor: pointer;
+  border: 0px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.star-filled {
+  color: gold;
+  cursor: pointer;
+  border: 0px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+img {
+  height: 350px;
+}
+
+.price-container {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  z-index: 1;
+  padding: 2px;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.price {
+  background-color: red;
+  color: white;
+  margin-right: 5px;
+}
+
+.regular_price {
+  background-color: #1d0436;
+  color: white;
+}
+
+.custom-class {
+  text-decoration: line-through;
+}
+
+.fav-card button {
+  height: 30px;
+}
+
+/*# sourceMappingURL=products.component.css.map */

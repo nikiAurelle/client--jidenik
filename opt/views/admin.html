@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+    <h3>{{ path }}</h3>
+    
+        {% for user in users %}
+        <ul>
+            <li>{{ user.username }}</li>
+            <li>{{ user.email }}</li>
+            <li>{{ user.password }}</li>
+        </ul>
+        {% endfor %}
+   
+{% endblock main %}
+

@@ -1,0 +1,16 @@
+npm install bcryptjs
+npm install nunjucks
+npm install express-session
+npm install mongodb
+npm install boostrap
+npm install cors
+npm install body-parser
+npm install uuid
+npm install ngx-cookie-service --force
+npm install cookie-parser
+npm install paypal
+npm install angular
+npm install creditcardpayments
+npm install multer
+
+si erreur, rajouter --force a la fin de npm install "module"

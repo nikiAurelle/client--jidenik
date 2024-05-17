@@ -1,0 +1,75 @@
+
+<main class="container">
+    <div *ngIf="isAuthentified" class="center-container">
+      <h3 class="mb-5">Mon profil</h3>
+      <button (click)="Logout()" class="btn btn-danger buttonLogout">Se déconnecter</button>
+      <form class="login-form border p-5 pt-2 pb-3">
+          <div class="form-group">
+              <label class ="labelProfile mb-4"for="username">Nom d'utilisateur</label>
+              <input (input)="ValidationUsername($event)" hidden class="text-center textProfile" type="text" id="username" name="username" value="{{user.username}}" required>
+              <p class="textProfile" id="txtUsername">{{user.username}}</p>
+              <p class="error" id="usernameError"></p>
+          </div>
+          <button (click)="ChangeUsername()" id="btnUsername" class="btn btn-primary">Modifier</button>
+          <button (click)="SaveUsername()" id="btnUsernameSave" class="btn btn-primary" hidden>Sauvegarder</button>
+      </form>
+      <form class="login-form border p-5 pt-2 pb-3">
+        <div class="form-group">
+            <label class ="labelProfile mb-4"for="email">Courriel</label>
+            <input (input)="ValidationEmail($event)" hidden class="text-center textProfile" type="text" id="email" name="email" value="{{user.email}}" required>            
+            <p class="textProfile" id="txtEmail">{{user.email}}</p>
+            <p class="error" id="btnEmail"id="emailError"></p>
+        </div>
+        <button (click)="ChangeEmail()" id="btnEmail" class="btn btn-primary">Modifier</button>
+        <button (click)="SaveEmail()" id="btnEmailSave" class="btn btn-primary" hidden>Sauvegarder</button>
+
+       </form>
+      <form  class="login-form border p-5 pt-2 pb-3 mb-5">
+        <div class="form-group">
+            <h3 class ="labelProfile mb-4">Adresse de livraison</h3>
+            <label class ="labelProfile mt-4" for="city">Ville</label>
+            <input (input)="ValidationCity($event)" hidden class="textProfile" type="text" id="city" name="city" value="{{user.address.city}}" required>
+            <p class="textProfile" id="txtCity">{{user.address.city}}</p>
+            <p class="error" id="cityError"></p>
+
+
+            <label class ="labelProfile mt-4" for="postal">Code postal</label>
+            <input (input)="ValidationPostal($event)" hidden class="textProfile" type="text" id="postal" name="postal" value="{{user.address.postal}}" required>
+            <p class="textProfile" id="txtPostal">{{user.address.postal}}</p>
+            <p class="error" id="postalError"></p>
+
+            <label class ="labelProfile mt-4" for="address">Adresse</label>
+            <input (input)="ValidationAddress($event)" hidden class="textProfile" type="text" id="address" name="address" value="{{user.address.address}}" required>
+            <p class="textProfile" id="txtAddress">{{user.address.address}}</p>
+            <p class="error" id="addressError"></p>
+        </div>
+        <button (click)="ChangeAddress()" id="btnAddress" class="btn btn-primary">Modifier</button>
+        <button (click)="SaveAddress()" id="btnAddressSave" class="btn btn-primary" hidden>Sauvegarder</button>
+      </form>
+      <button (click)="DisplayDelete()" class="btn btn-danger buttonDelete">Supprimer mon compte</button>
+    
+
+
+        <div hidden id="confirmDelete" class="divDelete">
+            <button (click)="HideDelete()" class="btn btn-danger btn-annuler">X</button>
+            <div class="d-block">
+                <h3 class="mt-4">Suppression de compte</h3>
+                <p class="mt-5">Êtes vous certain de vouloir supprimer votre compte? Cette action est <strong>IRRÉVERSIBLE</strong>.</p>
+                <p class="mt-5">Écrivez <strong>CONFIRMER</strong> pour supprimer votre compte.</p>
+                <form>
+                    <label></label>
+                    <input type="text" id="confirmationDelete" class="text-center">
+                </form>
+                <button (click)="DeleteAccount()" class="btn btn-danger mt-5">Supprimer</button>
+            </div>
+        </div>
+    </div>
+   
+  <div *ngIf="!isAuthentified" class="center-container">
+      <div class="center-content">
+          <h2>Veuillez vous connecter <a href="/login">ici</a></h2>
+      </div>
+  </div>
+</main>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>

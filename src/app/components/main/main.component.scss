@@ -1,0 +1,78 @@
+
+
+main{
+  margin: 30px auto;
+}
+section {
+  margin: 30px auto;
+}
+.category-radius{
+  width: 200px;
+  border-radius: 100%;
+  background-color: #494848;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.marque{
+  border: 5px solid #afa7a7;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+
+}
+.div-caroussel img{
+  width: 100%;
+}
+
+.div-promos .special, .arrival{
+  height: 400px;
+  width: 49%;
+  box-shadow: 3px 3px 3px gray;
+  color: #eae2e8;
+}
+
+.special{
+  background-image: url("/assets/images/8829652.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 70px;
+  font-weight: bold;
+
+}
+.arrival{
+  background-image: url("/assets/images/c2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 70px;
+  font-weight: bold;
+}
+img{
+  width: 100%;
+}
+
+.special button, .arrival button{
+  background-color: orange;
+  border: 0;
+  font-size: 35px;
+}
+
+.noir {
+  padding-left: 60px;
+  padding-top: 30px;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6)50%, rgba(0, 0, 0, 0.6)50%);
+
+}
+.del{
+  margin: 10px 35px ;
+}

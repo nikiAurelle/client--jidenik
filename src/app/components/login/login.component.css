@@ -1,0 +1,53 @@
+.centered-content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.centered-form {
+  display: inline-block;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.form-group input {
+  display: block;
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.centered-form {
+  display: inline-block;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  text-align: center !important;
+  max-width: 100%;
+  min-height: 20px;
+  margin: 0px;
+  overflow-wrap: break-word; /* Utilisation de overflow-wrap */
+}
+
+main {
+  border: 1px solid #695d5d;
+  margin: auto 30% 30px;
+}
+
+.div-form {
+  width: 70%;
+}
+
+/*# sourceMappingURL=login.component.css.map */

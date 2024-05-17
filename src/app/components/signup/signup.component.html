@@ -1,0 +1,45 @@
+<main class="centered-content">
+    <h1 class="bg-black text-white p-2">Inscription</h1>
+
+    <div class="div-form centered-form">
+        <form (submit)="onSubmit()" class="mt-3" method="POST">
+<!--            <div class="form-group">-->
+<!--                  <label for="username">Nom d'utilisateur :</label>-->
+<!--                  <input (input)="ValidateUsername()" class="form-control" type="text" id="username" name="username" value = "" required>-->
+<!--                  <p class="error" id="errorUsername"></p>-->
+<!--            </div>-->
+
+           <div>
+             <div class="input-group">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></span>
+                <input (input)="ValidateUsername()" type="text" class="form-control" placeholder="nom utilisateur" aria-label="Username" aria-describedby="basic-addon1" id="username" name="username" value = "" required>
+              </div>
+              <p class="error mb-3" id="errorUsername"></p>
+           </div>
+
+
+            <div class="input-group ">
+                <span class="input-group-text" id="basic-addon2"><i class="bi bi-envelope-fill"></i></span>
+                <input (input)="ValidateEmail()" type="email" placeholder="email" class="form-control" id="email" name="email" value = "" required>
+            </div>
+            <p class="error mb-3" id="errorEmail"></p>
+
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3"><i class="bi bi-unlock-fill"></i></span>
+                <input (input)="ValidatePassword()" type="password" placeholder="mot de passe" class="form-control" id="password" name="password" value=""   required>
+            </div>
+          <p class="error mb-3" id="errorPassword"></p>
+
+            <div class="input-group mt-4">
+                <span class="input-group-text" id="basic-addon4"><i class="bi bi-unlock-fill"></i></span>
+                <input (input)="ValidatePassword()" type="password" placeholder="confirmer le mot de passe" class="form-control" id="confirmPassword" name="confirmPassword"  value="" required>
+            </div>
+          <p class="error mb-3" id="PerrorPassword"></p>
+
+            <button class="largeButton m-2 py-2 fw-bold fs-4 btn btn-warning" type="submit">Enregistrer</button>
+        </form>
+    </div>
+
+
+</main>

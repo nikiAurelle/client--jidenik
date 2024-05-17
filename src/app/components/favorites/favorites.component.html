@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row m-4">
+        <h1>Favoris</h1>
+        <div *ngIf="favorites.length == 0">
+            <h3 class="mt-4">Vous n'avez aucun article sélectionnées en favoris. <button class="star-filled">&#9733;</button>  </h3>
+        </div>
+        <div class="col-md-3" *ngFor="let index of favorites; let i = index">
+            <div class="card">
+                <img id="img{{i}}" src="assets/images/loading.png" class="card-img-top" alt="...">
+                <div class="card-body fw-bold">
+                    <p class="card-text" id="name{{i}}">Chargement, veuillez patienter</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                       <p id="description{{i}}">Description</p>
+                       <div class="price-container">
+                            <p id="price{{i}}" class="m-2">0.00$</p>
+                       </div>  
+                       <button (click)="Favorite($event)" id="id{{i}}" class="star-filled" value="{{index}}">&#9733;</button>    
+                    </div>
+                </div>
+                <div class="m-3">
+                    <button (click)="AddToCart($event)" id="2id{{i}}" class="btn btn-primary btn-sm">Ajouter au panier</button>
+                </div>
+                <div class="card-footer">
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+  
+  

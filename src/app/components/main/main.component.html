@@ -1,0 +1,120 @@
+<main class="m-0">
+  <div class="containers div-caroussel">
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/images/c1.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/images/8829658.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            Src="assets/images/8829662.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="d-flex div-promos containers justify-content-between mt-2">
+    <div class="special">
+      <div class="noir">
+        <div>Nos</div>
+        <div>Meilleurs réductions</div>
+        <div>
+          <button>Voir plus >></button>
+        </div>
+      </div>
+    </div>
+    <div class="arrival">
+      <div class="noir">
+        <div>Nos</div>
+        <div>Nouveaux arrivages</div>
+        <div>
+          <button>Acheter maintenant >></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="d-flex justify-content-between fs-3 fw-bold del">
+    <div><i class="bi bi-truck-flatbed"></i> Livraison gratuite</div>
+    <div><i class="bi bi-currency-dollar"></i> Meilleurs prix garantis</div>
+    <div><i class="bi bi-clock"></i> Service disponible 24h/7</div>
+  </section>
+  <section class="container">
+    <app-products></app-products>
+  </section>
+  <section>
+    <h1 class="text-center fw-bold py-4">Acheter par catégorie</h1>
+    <div class="row row-cols-2 row-cols-md-3 row-cols-xl-5 row-cols-lg-4 mt-2">
+      <div *ngFor="let category of categories">
+        <div class="category-radius">
+          {{ category }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h1 class="text-center fw-bold p-3">Nos marques</h1>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
+      <div *ngFor="let marque of marques" class="p-0">
+        <div class="marque">
+          {{ marque }}
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
